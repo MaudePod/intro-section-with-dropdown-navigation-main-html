@@ -1,0 +1,83 @@
+section[class="intro-card"] {
+    display: grid;
+    width: 100%;
+    min-height: 100%;
+    grid-auto-rows: 1fr;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+section[class="intro-card-header"] {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+section[class="intro-card-body"] {
+    font-size: 18px;
+    width: 80%;
+}
+
+button {
+    display: grid;
+    place-content: center;
+    width: fit-content;
+    height: 50px;
+    padding: 5%;
+    background: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+}
+button:hover {
+    color:black;
+    background: white;
+}
+footer {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    height: 75px;
+    align-self: end;
+}
+
+footer svg {
+    height: 75px;
+    width: 50%;
+}
+
+@container body (inline-size < 1000px) {
+    main {
+        width: 100cqw;
+        height: unset;
+        grid-template-columns: 1fr;
+        align-self: baseline;
+        text-align: center;
+
+    }
+
+    section[class="intro-card"] {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        row-gap: 50px;
+        margin-top: 50px;
+        order: 2;
+    }
+
+    section[class="intro-card-header"] {
+        font-size: 2rem;
+    }
+
+    section[class="intro-card-body"] {
+        width: 95%;
+    }
+    footer {
+        width: 90cqw;
+    }
+}
