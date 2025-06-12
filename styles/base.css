@@ -25,7 +25,7 @@ main {
     display: grid;
     place-items: center;
     width: 80cqw;
-    height: 50cqh;
+    min-height: 50cqh;
     container: main / inline-size;
     grid-template-columns: 1fr 1fr;
     align-self: baseline;
