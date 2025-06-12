@@ -215,7 +215,10 @@ label[for="close-mobile-menu"] {
 nav[id="mobile-nav"] {
     display: none;
 }
-
+a,a:visited{
+    text-decoration: none;
+    color: black;
+}
 @container body (inline-size < 1000px) {
     nav menu {
         display: none;
